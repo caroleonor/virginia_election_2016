@@ -25,6 +25,7 @@ app.layout = html.Div([
         options=[{'label': i, 'value': i} for i in options_list],
         value=options_list[0]
     ),
+    image1='0.png'
     html.Br(),
     dcc.Graph(id='display-value'),
     html.Br(),
