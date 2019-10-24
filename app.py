@@ -30,7 +30,7 @@ app.layout = html.Div([
     html.Br(),
     dcc.Graph(id='display-value'),
     html.Br(),
-    html.Img(src=image1, style={'width': '500', 'height': '333'}),
+    html.Img(src=image1, style={'width': '1000', 'height': '600'}),
     html.Br(),
     html.A('Code on Github', href='https://github.com/caroleonor/virginia_election_2016/edit/master/app.py'),
     html.Br(),
