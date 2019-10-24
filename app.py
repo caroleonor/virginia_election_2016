@@ -26,9 +26,11 @@ app.layout = html.Div([
         options=[{'label': i, 'value': i} for i in options_list],
         value=options_list[0]
     ),
-    html.Img(src=image1, style={'width': 'auto', 'height': 'auto'}),
+   
     html.Br(),
     dcc.Graph(id='display-value'),
+    html.Br(),
+    html.Img(src=image1, style={'width': '500', 'height': '333'}),
     html.Br(),
     html.A('Code on Github', href='https://github.com/caroleonor/virginia_election_2016/edit/master/app.py'),
     html.Br(),
