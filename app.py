@@ -28,7 +28,7 @@ app.layout = html.Div([
     html.Br(),
     dcc.Graph(id='display-value'),
     html.Br(),
-    html.A('Code on Github', href='https://github.com/austinlasseter/virginia_election_2016'),
+    html.A('Code on Github', href='https://github.com/caroleonor/virginia_election_2016/edit/master/app.py'),
     html.Br(),
     html.A('Data Source', href='https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LYWX3D')
 ])
