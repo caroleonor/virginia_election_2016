@@ -11,6 +11,7 @@ from plotly.graph_objs import *
 df = pd.read_pickle('virginia_totals.pkl')
 options_list=list(df['jurisdiction'].value_counts().sort_index().index)
 
+image1='VA 2016.jpg'
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
@@ -25,7 +26,7 @@ app.layout = html.Div([
         options=[{'label': i, 'value': i} for i in options_list],
         value=options_list[0]
     ),
-    image1='VA 2016.jpg'
+    html.Img(src=app.get_asset_url(image1), style={'width': 'auto', 'height': 'auto'})
     html.Br(),
     dcc.Graph(id='display-value'),
     html.Br(),
