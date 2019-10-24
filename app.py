@@ -42,15 +42,15 @@ def juris_picker(juris_name):
 
     mydata1 = go.Bar(x=list(juris_df['precinct'].value_counts().index),
                      y=list(juris_df['votes']['Donald Trump']),
-                     marker=dict(color='#122A7F'),
+                     marker=dict(color='#46E81B'),
                      name='Trump')
     mydata2 = go.Bar(x=list(juris_df['precinct'].value_counts().index),
                      y=list(juris_df['votes']['Hillary Clinton']),
-                     marker=dict(color='#f96800'),
+                     marker=dict(color='#1BCCE8'),
                      name='Clinton')
     mydata3 = go.Bar(x=list(juris_df['precinct'].value_counts().index),
                      y=list(juris_df['votes']['Other']),
-                     marker=dict(color='#009900'),
+                     marker=dict(color='#777976'),
                      name='Other')
 
     mylayout = go.Layout(
